@@ -42,11 +42,12 @@ const IndexPage = ({ data }) => {
       {edges.map(edge => {
         const {
           node: {
+            id,
             frontmatter: { title, path },
           },
         } = edge;
         return (
-          <div key={path}>
+          <div key={id}>
             <Link to={path}>{title}</Link>
           </div>
         );

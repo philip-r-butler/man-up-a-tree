@@ -4,35 +4,6 @@ import Layout from '../components/layout';
 import Image from '../components/image';
 import SEO from '../components/seo';
 
-// const TitleAndDescription = ({ data }) => {
-//   const { title, description } = data.site.siteMetadata;
-//
-//   return (
-//     <div>
-//       <h2>{title}</h2>
-//       <p>{description}</p>
-//     </div>
-//   );
-// };
-
-// const Header = () => {
-//   return (
-//     <StaticQuery
-//       query={graphql`
-//         query {
-//           site {
-//             siteMetadata {
-//               title
-//               description
-//             }
-//           }
-//         }
-//       `}
-//       render={data => <TitleAndDescription data={data} />}
-//     />
-//   );
-// };
-
 const IndexPage = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
